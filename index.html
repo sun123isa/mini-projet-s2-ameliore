@@ -4,207 +4,412 @@
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <title>Page Title</title>
- 
+    <title>WebHelpBlog</title>
+
 
     <link rel='stylesheet' href='style.css'>
 </head>
 
 <body>
-    <header></header>
+    <header id="header">
+        <div class="bond-top">
+            <p>Rettrape ton retard ici avec ces mini cours !</p>
+        </div>
+        <div id="logo"><span>WebHelp</span>Blog</div>
+        <nav>
+            <ul>
+                <li><a href="#">Acceuil</a></li>
+                <li><a href="#">Cours libre</a></li>
+                <li><a href="#">A propos</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <main>
 
-       
-        <!-- **************** hero PAGE ************************** -->
-        <section id="hero-section">
-            <h1 id="entreprise"> <span>Cosmo</span>Travel</h1>
-            <div class="hero-section-content">
-                <article class="banner">
-                    <p class="decal1">Concrétisez votre voyage de rêve</p>
-                
-                    <h2 class="titre">Explorez le Monde <br>à votre façon</h2>
-                    <p class="decal2">Commencez avec nous </p>
-                
-                    <p class="description">
-                        Évadez-vous de la routine et partez à la découverte de destinations uniques. Des plages
-                        paradisiaques aux sommets
-                        enneigés, notre équipe conçoit des itinéraires sur mesure pour transformer vos rêves de voyage en
-                        réalités inoubliables.
-                    </p>
-                
-                    <!-- AJOUT DES BOUTONS ICI -->
-                    <div class="hero-section-buttons">
-                        <a href="#" class="btn btn-main">Trouver mon voyage</a>
-                        <a href="#" class="btn btn-secondary">Voir nos destinations</a>
-                    </div>
-                </article>
+        <section id="hero">
+            <p class="decal1">Votre outil de productivité</p>
+
+            <h1 class="titre">Le second cerveau du dev</h1>
+            <p class="decal2">Simplifiez vos révisions</p>
+
+            <p class="description">
+                Le mémo ultime des étudiants en dev. Retrouvez en un clic vos aide-mémoires de code, des astuces
+                informatiques
+                indispensables et l'essentiel pour booster votre productivité au quotidien.
+            </p>
+
+            <!-- LES BOUTONS ADAPTÉS -->
+            <div class="hero-buttons">
+                <a href="#memos" class="btn btn-main">Commencer</a>
+                <!-- Remplacez le numéro ci-dessous par votre numéro (ex: 33612345678) -->
+                <a href="https://wa.me" target="_blank" class="btn btn-whatsapp">
+                    M'écrire sur WhatsApp
+                </a>
             </div>
-            
         </section>
 
 
 
-   
+
+        <!-- NOS COURS DISPONIBLE -->
 
 
+        <section id="list-cours-disponible">
 
-        <!-- ***************   CARTE PRODUIT ******************** -->
-         <section id="card-section">
-                <h2 class="titre">NOS OFFRES</h2>
-                <div class="separation-bar"></div>
-
+            <h2 id="titre-cours-disponible" class="titre-section"> COURS DISPONIBLE</h2>
+            <div class="container-pro">
 
 
-                <div id="card-grid">
-    
-                    <article class="card-box">
-                        <div class="card-image"
-                            style="background-image: url('./ressources/image/banner/b7.jpg'); background-size: cover; background-position: center;">
-                            <div class="box-type-reduction">
-                                <div class="card-type"> <img src="./ressources/icons/ettiquette.svg" alt=""> Promo
-                                </div>
-                                <div class="card-reduction"><img src="./ressources/icons/etoile2.svg" alt=""> Vedette
-                                </div>
-                                <div class="bio"><img src="./ressources/icons/herbe.svg" alt=""> Bio
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-description">
-                            <div class="text-desciptif">Bio Nature</div>
-                             <h3 class="card-titre">Pommes Golden Bio </h3>
-                            <div class="text-qte">Pack 12X100mg</div>
-                    
-                            <div class="card-box-etoile"><img src="./ressources/icons/etoile2.svg" alt="" class="image-etoile"> 4.8 (124)
-                            </div>
-                    
-                            <div class="enbox-description">
-                                
-                                    <div>
-                                        <span class="price">2.49$</span>
-                                        <span class="ps-2 priceUnite "> 2.49$/kg</span>
-                                    </div>
-                               
-                                    <a class="my-btn">Ajouter au panier</a>
-                            </div>
+                <div class="grid-list-cours">
+                    <a href="#bloc-cours-html">
+                        Cours HTML 5
+                    </a>
 
-                            
-                        </div>
-                    </article>
-
-                    <article class="card-box">
-                        <div class="card-image"
-                            style="background-image: url('./ressources/image/banner/b17.jpg'); background-size: cover; background-position: center;">
-                            <div class="box-type-reduction">
-                                <div class="card-type"> <img src="./ressources/icons/ettiquette.svg" alt=""> Promo
-                                </div>
-                                <div class="card-reduction"><img src="./ressources/icons/etoile2.svg" alt=""> Vedette
-                                </div>
-                               
-                            </div>
-                        </div>
-                        <div class="card-description">
-                            <div class="text-desciptif">Bio Nature</div>
-                             <h3 class="card-titre">Pommes Golden Bio </h3>
-                            <div class="text-qte">Pack 12X100mg</div>
-                    
-                            <div class="card-box-etoile"><img src="./ressources/icons/etoile2.svg" alt="" class="image-etoile"> 4.8 (124)
-                            </div>
-                    
-                            <div class="enbox-description">
-                    
-                                <div>
-                                    <span class="price">2.49$</span>
-                                    <span class="ps-2 priceUnite "> 2.49$/kg</span>
-                                </div>
-                    
-                                <a class="my-btn">Ajouter au panier</a>
-                            </div>
-                    
-                    
-                        </div>
-                    </article>
+                    <a href="#">
+                        Cours CSS
+                    </a>
 
 
-                    <article class="card-box">
-                        <div class="card-image"
-                            style="background-image: url('./ressources/image/banner/b18.jpg'); background-size: cover; background-position: center;">
-                            <div class="box-type-reduction">
-                                <div class="card-type"> <img src="./ressources/icons/ettiquette.svg" alt=""> Promo
-                                </div>
-                              
-                                <div class="bio"><img src="./ressources/icons/herbe.svg" alt=""> Bio
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-description">
-                            <div class="text-desciptif">Bio Nature</div>
-                             <h3 class="card-titre">Pommes Golden Bio </h3>
-                            <div class="text-qte">Pack 12X100mg</div>
-                    
-                            <div class="card-box-etoile"><img src="./ressources/icons/etoile2.svg" alt="" class="image-etoile"> 4.8 (124)
-                            </div>
-                    
-                            <div class="enbox-description">
-                    
-                                <div>
-                                    <span class="price">2.49$</span>
-                                    <span class="ps-2 priceUnite "> 2.49$/kg</span>
-                                </div>
-                    
-                                <a class="my-btn">Ajouter au panier</a>
-                            </div>
-                    
-                    
-                        </div>
-                    </article>
+                    <a href="#">
+                        Cours Javascript
+                    </a>
+
+                    <a href="#">
+                        Cours Boostrap
+                    </a>
+
+                    <a href="#">
+                        Cours Tailwind
+                    </a>
+
+                    <a href="#">
+                        Cours PHP
+                    </a>
 
 
-                    <article class="card-box">
-                        <div class="card-image"
-                            style="background-image: url('./ressources/image/banner/b4.jpg'); background-size: cover; background-position: center;">
-                            <div class="box-type-reduction">
-                                <div class="card-type"> <img src="./ressources/icons/ettiquette.svg" alt=""> Promo
-                                </div>
-                                <div class="card-reduction"><img src="./ressources/icons/etoile2.svg" alt=""> Vedette
-                                </div>
-                                <div class="bio"><img src="./ressources/icons/herbe.svg" alt=""> Bio
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-description">
-                            <div class="text-desciptif">Bio Nature</div>
-                             <h3 class="card-titre">Pommes Golden Bio </h3>
-                            <div class="text-qte">Pack 12X100mg</div>
-                    
-                            <div class="card-box-etoile"><img src="./ressources/icons/etoile2.svg" alt="" class="image-etoile"> 4.8 (124)
-                            </div>
-                    
-                            <div class="enbox-description">
-                    
-                                <div>
-                                    <span class="price">2.49$</span>
-                                    <span class="ps-2 priceUnite "> 2.49$/kg</span>
-                                </div>
-                    
-                                <a class="my-btn">Ajouter au panier</a>
-                            </div>
-                    
-                    
-                        </div>
-                    </article>
+                    <a href="#">
+                        Cours LARAVEL
+                    </a>
 
-                    
-
-
-
+                    <a href="#">
+                        Cours PYTHON
+                    </a>
 
 
                 </div>
-         </section>
+            </div>
+        </section>
+
+        <section id="bloc-cours-html">
+
+            <h2 id="titre-cours-html" class="titre-section"> APPRENDRE LE HTML 5</h2>
+
+            <div class="container-pro">
+
+
+
+                <div class="summary-container">
+                    <h3 class="">Sommaire</h3>
+                    <ol class="summary-list">
+                        <li>
+                            <a href="#introduction">Introduction</a>
+                        </li>
+                        <li>
+                            <a href="#chap1" id="sommaire-chap1">1. Fondations du CSS Grid</a>
+                            <!-- Sous-menu -->
+                            <ol class="summary-sublist">
+                                <li><a href="#sub1-1">1.1 balise !DOCTYPE</a></li>
+                                <li><a href="#sub1-2">1.2 balise HTML</a></li>
+                                <li><a href="#sub1-3">1.3 balise HEAD</a></li>
+                                <li><a href="#sub1-4">1.4 balise BODY</a></li>
+                                <li><a href="#sub1-5">1.5 balise TITLE</a></li>
+                                <li><a href="#sub1-6">1.6 balise META</a></li>
+                                <li><a href="#sub1-7">1.7 balise LINK</a></li>
+                            </ol>
+                        </li>
+                        <li>
+                            <a href="#chap2">3. Propriétés Avancées</a>
+                        </li>
+                        <li>
+                            <a href="#conclusion">4. Conclusion</a>
+                        </li>
+                    </ol>
+                </div>
+
+
+
+
+
+                <article id="introduction">
+                    <h3>Présentation du cours </h3>
+                    <p><em><small> <u>Derniere mise à jour :</u> 18 juin 2026 à 11<sup>h</sup>30 min </small></em></p>
+                    <p>
+                        Ce mini cours s'adresse aux <strong>étudiants débutants en informatique</strong> souhaitant
+                        maîtriser les bases
+                        fondamentales du développement web.
+                        Il propose une <strong>liste assez vaste des balises HTML</strong>, expliquées pas à pas avec
+                        des
+                        exemples
+                        concrets d'utilisation.
+                        L'objectif est de vous donner une autonomie totale pour structurer n'importe quelle page web de
+                        manière propre et
+                        professionnelle.
+                    </p>
+                    <p>
+                        Maîtriser ces balises est une étape indispensable pour créer des sites rapides, accessibles à
+                        tous
+                        et parfaitement
+                        optimisés pour le référencement Google (SEO).
+                        Pour faciliter votre apprentissage, le cours est structuré par <strong>catégories</strong> :
+                        structure, texte,
+                        listes, tableaux, liens, multimédia, formulaires, sémantique et métadonnées.
+                        À la fin de ce programme, vous disposerez d'une boîte à outils complète pour donner vie à vos
+                        propres projets en
+                        ligne.
+                    </p>
+                </article>
+
+
+
+                <div class="bloc-cours-detail">
+                    
+
+                    <section id="chap1" class="chapitre-complet">
+                        <h3 class="chap-title">CHAPITRE 1 : LES BALISES DE STRUCTURE</h3>
+                        <p>
+                            <a href="#sommaire-chap1" class="back-link">&leftarrow; Retour au Sommaire </a>
+                        </p>
+                        <p class="chap-desc">Ces balises définissent la <strong>structure fondamentale</strong> de toute page HTML.</p>
+                    
+                        <!-- 1.1 -->
+                        <article class="grid-article" id="sub1-1">
+                            <div class="text-side">
+                                <h3>1.1. La balise <code>&lt;!DOCTYPE html&gt;</code></h3>
+                                <p><strong>Utilité :</strong> Déclare que le document utilise HTML5 (la version la plus récente).</p>
+                                <p><strong>Emplacement :</strong> Tout en haut du document, avant la balise <code>&lt;html&gt;</code>.</p>
+                                <p><strong>À retenir :</strong> Toujours obligatoire !</p>
+                            </div>
+                            <div class="code-side">
+                                <pre><code>&lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                        &lt;!-- contenu --&gt;
+                    &lt;/html&gt;</code></pre>
+                            </div>
+                        </article>
+                    
+                        <!-- 1.2 -->
+                        <article class="grid-article" id="sub1-2">
+                            <div class="text-side">
+                                <h3>1.2. La balise <code>&lt;html&gt;</code></h3>
+                                <p><strong>Utilité :</strong> La racine du document. Tout le code HTML est contenu à l'intérieur.</p>
+                                <p><strong>Attribut important :</strong> <code>lang</code> (indique la langue de la page)</p>
+                                <p><strong>À retenir :</strong> La balise qui englobe TOUTE la page.</p>
+                            </div>
+                            <div class="code-side">
+                                <pre><code>&lt;html lang="fr"&gt;
+                        &lt;!-- tout le contenu --&gt;
+                    &lt;/html&gt;</code></pre>
+                            </div>
+                        </article>
+                    
+                        <!-- 1.3 -->
+                        <article class="grid-article" id="sub1-3">
+                            <div class="text-side">
+                                <h3>1.3. La balise <code>&lt;head&gt;</code></h3>
+                                <p><strong>Utilité :</strong> L'en-tête de la page. Contient les métadonnées (non visibles à l'écran).</p>
+                                <p><strong>À retenir :</strong> Ce qui est dans <code>&lt;head&gt;</code> ne s'affiche pas sur la page.</p>
+                            </div>
+                            <div class="code-side">
+                                <pre><code>&lt;head&gt;
+                        &lt;meta charset="UTF-8"&gt;
+                        &lt;title&gt;Mon Site&lt;/title&gt;
+                        &lt;link rel="stylesheet" href="style.css"&gt;
+                    &lt;/head&gt;</code></pre>
+                            </div>
+                        </article>
+                    
+                        <!-- 1.4 -->
+                        <article class="grid-article" id="sub1-4">
+                            <div class="text-side">
+                                <h3>1.4. La balise <code>&lt;body&gt;</code></h3>
+                                <p><strong>Utilité :</strong> Le corps de la page. Tout ce qui est visible par l'utilisateur.</p>
+                                <p><strong>À retenir :</strong> Tout ce que tu vois dans le navigateur est dans <code>&lt;body&gt;</code>.
+                                </p>
+                            </div>
+                            <div class="code-side">
+                                <pre><code>&lt;body&gt;
+                        &lt;h1&gt;Bienvenue sur mon site&lt;/h1&gt;
+                        &lt;p&gt;Contenu visible&lt;/p&gt;
+                    &lt;/body&gt;</code></pre>
+                            </div>
+                        </article>
+                    
+                        <!-- 1.5 -->
+                        <article class="grid-article" id="sub1-5">
+                            <div class="text-side">
+                                <h3>1.5. La balise <code>&lt;title&gt;</code></h3>
+                                <p><strong>Utilité :</strong> Le titre de la page (s'affiche dans l'onglet du navigateur).</p>
+                                <p><strong>Emplacement :</strong> Dans <code>&lt;head&gt;</code>.</p>
+                                <p><strong>À retenir :</strong> Très important pour le référencement (SEO).</p>
+                            </div>
+                            <div class="code-side">
+                                <pre><code>&lt;title&gt;Mon Site Web - Accueil&lt;/title&gt;</code></pre>
+                            </div>
+                        </article>
+                    
+                        <!-- 1.6 -->
+                        <article class="grid-article" id="sub1-6">
+                            <div class="text-side">
+                                <h3>1.6. La balise <code>&lt;meta&gt;</code></h3>
+                                <p><strong>Utilité :</strong> Définit des métadonnées (informations sur la page).</p>
+                                <p><strong>Attributs importants :</strong></p>
+                                <ul>
+                                    <li><code>charset</code> : encodage des caractères</li>
+                                    <li><code>name="viewport"</code> : adaptation aux mobiles</li>
+                                    <li><code>name="description"</code> : description pour les moteurs de recherche</li>
+                                    <li><code>name="keywords"</code> : mots-clés</li>
+                                </ul>
+                                <p><strong>À retenir :</strong> Aident les moteurs de recherche et améliorent l'expérience utilisateur.</p>
+                            </div>
+                            <div class="code-side">
+                                <pre><code>&lt;!-- Encodage (pour les accents) --&gt;
+                    &lt;meta charset="UTF-8"&gt;
+                    
+                    &lt;!-- Responsive (adaptation mobile) --&gt;
+                    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                    
+                    &lt;!-- Description (SEO) --&gt;
+                    &lt;meta name="description" content="Description de mon site"&gt;</code></pre>
+                            </div>
+                        </article>
+                    
+                        <!-- 1.7 -->
+                        <article class="grid-article" id="sub1-7">
+                            <div class="text-side">
+                                <h3>1.7. La balise <code>&lt;link&gt;</code></h3>
+                                <p><strong>Utilité :</strong> Lie une ressource externe (feuille de style CSS, police, icône, etc.).</p>
+                                <p><strong>Attributs importants :</strong></p>
+                                <ul>
+                                    <li><code>rel</code> : la relation avec la ressource (<code>stylesheet</code>, <code>icon</code>, etc.)
+                                    </li>
+                                    <li><code>href</code> : le chemin vers la ressource</li>
+                                </ul>
+                                <p><strong>À retenir :</strong> Indispensable pour lier le CSS à ta page.</p>
+                            </div>
+                            <div class="code-side">
+                                <pre><code>&lt;!-- Lien vers une feuille de style CSS --&gt;
+                    &lt;link rel="stylesheet" href="style.css"&gt;
+                    
+                    &lt;!-- Lien vers une icône de favoris (favicon) --&gt;
+                    &lt;link rel="icon" href="favicon.ico"&gt;</code></pre>
+                            </div>
+                        </article>
+                    </section>
+
+
+                    
+                </div>
+            </div>
+
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- =============   RESSOURCE SUPPLEMENTIARES SI ON VEUT ALLER PLUS LOIN DANS CE SUJET ============= -->
+        <aside>
+            <h2>Ressources complementaires </h2>
+
+            <div class="container-pro">
+<p>Nous vous recommadant de consulter ces plateformes pour accroitre vos compétences dans le ce domaine de
+    l'informatique : </p>
+<ol>
+    <li>
+        <a href="https://developer.mozilla.org/fr/docs/Web" target="_blank">
+            <strong>MDN Web Docs (Mozilla)</strong>
+        </a>
+        &rightarrow; <em>dictionnaire ultime du développement web moderne</em>
+    </li>
+    <li>
+        <a href="https://validator.w3.org/" target="_blank">
+            <strong>W3C Validator </strong>
+        </a>
+        &rightarrow; <em>Outil pour vérifier
+            la qualité, la conformité et l'exactitude du code source d'une page web aux normes
+            internationales du web
+            [W3C] </em>
+    </li>
+    <li>
+        <a href="https://github.com" target="_blank">
+            <strong>Git et GitHub </strong>
+        </a>
+        &rightarrow;
+        <em>indispendable dans le
+            développement web moderne pour le contrôle de version de votre projet</em>
+    </li>
+</ol>
+<p><strong>A retenir :</strong> Cette liste n'est pas exhaustive , mais peux deja servir d'un bon debut.
+</p>
+            </div>
+           
+        </aside>
+        
+        
+        
+        <!-- =================   LAISSEZ NOUS VOTRE AVIS ================== -->
+        <section id="suggestion">
+            <h2>Suggestion </h2>
+            <div class="container-pro">
+            <form action="test.php" method="POST">
+                <!-- Début du regroupement -->
+                <fieldset>
+                    <!-- Le titre obligatoire en premier -->
+                    <legend>Laissez nous votre point de vu </legend>
+                    <label for="email">Votre email *</label>
+                    <input type="email" name="email" id="email" placeholder="Ex: monemail@exemple.com" required>
+        
+                    <label for="message">Votre message *</label>
+                    <textarea name="message" rows="10" id="message">Ecrivez votre message ici......</textarea>
+                    <button type="submit">Envoyer</button>
+                </fieldset>
+            </form>
+            </div>
+        </section>
+
+
+
     </main>
 
-    <footer></footer>
+    <footer id="footer">
+        <div class="footer-container">
+            <!-- Partie gauche : Infos plateforme -->
+            <div class="footer-info">
+                <h2>Mini Aide Mémoire</h2>
+                <p class="public-tag">Public : Tout le monde</p>
+            </div>
+
+            <!-- Partie droite : Crédits -->
+            <div class="footer-credits">
+                <p>© 2026 - Tous droits réservés</p>
+                <p class="cohort">Akieni Academy - Cohorte 2</p>
+            </div>
+        </div>
+    </footer>
+
 </body>
 
 </html>
